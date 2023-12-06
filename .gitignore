@@ -1,0 +1,7 @@
+*
+!/**/
+!*.*
+!Dockerfile
+*.out
+input.txt
+**/target
