@@ -1,0 +1,18 @@
+{
+	"name": "AdventOfCode",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"configureZshAsDefaultShell": true
+		}
+	},
+	"containerEnv": {
+		"SSH_AUTH_SOCK": "/run/host-services/ssh-auth.sock"
+	},
+	"mounts": [
+		"type=bind,source=${localEnv:SSH_AUTH_SOCK},target=/run/host-services/ssh-auth.sock,readonly"
+	]
+}
