@@ -1,0 +1,194 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build c file",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+        },
+        {
+            "label": "run c file",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "build c file"
+            ],
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "dotnet-script run",
+            "type": "shell",
+            "command": "dotnet-script",
+            "args": [
+                "${file}",
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "lua run",
+            "type": "shell",
+            "command": "lua",
+            "args": [
+                "${file}",
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "node run",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${file}",
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "go run",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "run",
+                "${file}",
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "go build",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "build",
+                "${file}",
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "go test",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "test",
+                "${file}",
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "rust build",
+            "type": "shell",
+            "command": "rustc",
+            "args": [
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "rust run",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "rust build"
+            ],
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+        {
+            "label": "python run",
+            "type": "shell",
+            "command": "python3.11",
+            "args": [
+                "${file}",
+                "${input:args}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+        },
+    ],
+    "inputs": [
+        {
+            "id": "args",
+            "type": "promptString",
+            "description": "Arguments for c run",
+            "default": "${fileDirname}/input.txt"
+        }
+    ]
+}

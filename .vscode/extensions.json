@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "ms-dotnettools.csharp",
+        "actboy168.lua-debug",
+        "ms-vscode.cpptools-extension-pack",
+        "phil294.git-log--graph",
+        "tamasfe.even-better-toml",
+        "rust-lang.rust-analyzer",
+        "golang.go",
+        "sumneko.lua",
+        "ms-azuretools.vscode-docker",
+        "dbaeumer.vscode-eslint",
+        "vadimcn.vscode-lldb"
+    ]
+}
