@@ -7,7 +7,7 @@ Advent of code day 1.
 - [x] [C](day-01.c)
 - [x] [Lua](day-01.lua)
 - [x] [Dotnet-Script](day-01.csx)
-- [ ] [Python](day-01.py)
+- [x] [Python](day-01.py)
 - [ ] [Rust](day-01.rs)
 - [ ] [Go](day-01.go)
 - [x] [JavaScript](day-01.mjs)
