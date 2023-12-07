@@ -13,6 +13,9 @@
         "sumneko.lua",
         "ms-azuretools.vscode-docker",
         "dbaeumer.vscode-eslint",
-        "vadimcn.vscode-lldb"
+        "vadimcn.vscode-lldb",
+        "ms-python.python",
+        "ms-python.isort",
+        "ms-python.black-formatter"
     ]
 }

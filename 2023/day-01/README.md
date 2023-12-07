@@ -10,7 +10,7 @@ Advent of code day 1.
 - [ ] [Python](day-01.py)
 - [ ] [Rust](day-01.rs)
 - [ ] [Go](day-01.go)
-- [ ] [JavaScript](day-01.js)
+- [x] [JavaScript](day-01.mjs)
 
 ## Links
 
