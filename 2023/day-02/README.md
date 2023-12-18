@@ -1,6 +1,6 @@
 # [--- Day 2: Cube Conundrum ---](https://adventofcode.com/2023/day/2)
 
-Advent of code day 1.
+Advent of code day 2.
 
 ## Languages
 
