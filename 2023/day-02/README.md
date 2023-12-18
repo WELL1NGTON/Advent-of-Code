@@ -8,6 +8,10 @@ Advent of code day 1.
 
 - [x] [Dotnet-Script](day-02-part1.csx)
 
+### Part 2
+
+- [x] [Dotnet-Script](day-02-part2.csx)
+
 ## Links
 
 - [Day 2 challenge](https://adventofcode.com/2023/day/2)
