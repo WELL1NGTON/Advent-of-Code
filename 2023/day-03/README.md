@@ -10,7 +10,7 @@ Advent of code day 3.
 
 ### Part 2
 
-- [ ] [Python](day-03-part2.py)
+- [x] [Python](day-03-part2.py)
 
 ## Links
 
