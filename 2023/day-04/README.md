@@ -10,7 +10,7 @@ Advent of code day 4.
 
 ### Part 2
 
-- [ ] [C](day-04-part2.c)
+- [x] [C](day-04-part2.c)
 
 ## Links
 
