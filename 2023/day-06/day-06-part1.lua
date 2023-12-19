@@ -5,12 +5,6 @@ if file_path == nil then
     file_path = "input.txt"
 end
 
--- if not io.open(file_path, "r") then
---     print("The file " .. file_path .. " does not exist.")
---     os.exit(1)
--- end
-
-
 file = io.open(file_path, "r")
 
 if file == nil then
@@ -29,8 +23,6 @@ line_times = lines[1]
 line_distances = lines[2]
 
 if type(line_times) ~= "string" or type(line_distances) ~= "string" then
-    print(type(line_times))
-    print(type(line_distances))
     print("The file " .. file_path .. " is empty or has less than 2 lines.")
     os.exit(1)
 end
