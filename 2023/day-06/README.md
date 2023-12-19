@@ -10,7 +10,7 @@ Advent of code day 6.
 
 ### Part 2
 
-- [ ] [Lua](day-06-part2.lua)
+- [x] [Lua](day-06-part2.lua)
 
 ## Links
 
