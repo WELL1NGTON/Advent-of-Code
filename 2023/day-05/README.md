@@ -10,7 +10,7 @@ Advent of code day 5.
 
 ### Part 2
 
-- [] [JavaScript](day-05-part2.mjs)
+- [x] [JavaScript](day-05-part2.mjs)
 
 ## Links
 
