@@ -14,6 +14,13 @@
             },
             "cwd": "${fileDirname}",
             "stopAtEntry": false
+        },
+        {
+            "name": "Node Debug",
+            "type": "node",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}"
         }
     ]
 }
