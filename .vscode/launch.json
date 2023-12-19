@@ -21,6 +21,13 @@
             "request": "launch",
             "program": "${file}",
             "cwd": "${fileDirname}"
+        },
+        {
+            "name": "Lua Debug",
+            "type": "lua",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}"
         }
     ]
 }
