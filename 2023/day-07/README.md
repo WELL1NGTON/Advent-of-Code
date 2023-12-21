@@ -10,7 +10,7 @@ Advent of code day 7.
 
 ### Part 2
 
-- [ ] [Rust](day-07-part2.rs)
+- [x] [Rust](day-07-part2.rs)
 
 ## Links
 
