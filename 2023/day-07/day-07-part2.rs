@@ -150,30 +150,8 @@ fn main() {
         while i < hands.len() {
             let rank = i as i64 + 1;
             sum = sum + hands[i].bid * rank;
-            // println!("{}: {}", rank, hands[i].bid);
             i += 1;
         }
-
-        // i = 0;
-        // for hand in hands {
-        //     i += 1;
-        //     println!(
-        //         "{} - {}: {}",
-        //         hand.cards,
-        //         hand.groups
-        //             .into_iter()
-        //             .fold(String::from(""), |mut acc, v| {
-        //                 acc.push_str(i.to_string().as_str());
-        //                 acc.push_str(" - ( ");
-        //                 acc.push(v.symbol);
-        //                 acc.push(' ');
-        //                 acc.push_str(v.ammount.to_string().as_str());
-        //                 acc.push_str(" )");
-        //                 return acc;
-        //             }),
-        //         hand.bid
-        //     );
-        // }
 
         println!("Total winnings: {}", sum);
     }
