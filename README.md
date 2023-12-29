@@ -36,7 +36,7 @@ gcc day-01.c -o day-01
 lua day-01.lua
 ```
 
-### Run solution in Dotnet-Script
+### Run solution in C# (dotnet-script)
 
 ```bash
 dotnet script day-01.csx

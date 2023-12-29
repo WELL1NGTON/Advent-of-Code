@@ -6,11 +6,11 @@ Advent of code day 2.
 
 ### Part 1
 
-- [x] [Dotnet-Script](day-02-part1.csx)
+- [x] [C#](day-02-part1.csx)
 
 ### Part 2
 
-- [x] [Dotnet-Script](day-02-part2.csx)
+- [x] [C#](day-02-part2.csx)
 
 ## Links
 
