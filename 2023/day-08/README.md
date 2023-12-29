@@ -10,7 +10,7 @@ Advent of code day 8.
 
 ### Part 2
 
-- [ ] [Go](day-08-part2.go)
+- [x] [Go](day-08-part2.go)
 
 ## Links
 
