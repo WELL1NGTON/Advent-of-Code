@@ -10,7 +10,7 @@ Advent of code day 9.
 
 ### Part 2
 
-- [ ] [C#](day-09-part2.csx)
+- [x] [C#](day-09-part2.csx)
 
 ## Links
 
