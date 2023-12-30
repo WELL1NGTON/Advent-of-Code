@@ -21,3 +21,8 @@ csharp_new_line_before_open_brace = none
 
 [*.csx]
 dotnet_diagnostic.IDE0040.severity = none
+
+[*.txt]
+trim_trailing_whitespace = false
+insert_final_newline = false
+max_line_length = off
