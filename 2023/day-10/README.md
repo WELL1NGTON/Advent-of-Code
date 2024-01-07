@@ -6,11 +6,11 @@ Advent of code day 10.
 
 ### Part 1
 
-- [x] [Python](day-010-part1.py)
+- [x] [Python](day-10-part1.py)
 
 ### Part 2
 
-- [ ] [Python](day-010-part2.py)
+- [x] [Python](day-10-part2.py)
 
 ## Links
 
