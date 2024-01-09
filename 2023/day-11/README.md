@@ -1,4 +1,4 @@
-# [--- Day 11: Pipe Maze ---](https://adventofcode.com/2023/day/11)
+# [--- Day 11: Cosmic Expansion ---](https://adventofcode.com/2023/day/11)
 
 Advent of code day 11.
 
