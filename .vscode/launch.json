@@ -29,7 +29,8 @@
             "type": "node",
             "request": "launch",
             "program": "${file}",
-            "cwd": "${fileDirname}"
+            "cwd": "${fileDirname}",
+            "console": "integratedTerminal"
         },
         {
             "name": "Lua Debug",
