@@ -18,4 +18,5 @@
     "[plaintext]": {
         "editor.rulers": [ ]
     },
+    "docker.languageserver.formatter.ignoreMultilineInstructions": true
 }
