@@ -11,8 +11,8 @@ RUN apt update && \
 RUN apt install -y lua5.4
 
 # Install Python 3.11
-RUN apt install -y python3.11 \
-                   python3.11-dev \
+RUN apt install -y python3.13 \
+                   python3.13-dev \
                    python3-distutils \
                    python3-pip
 
@@ -31,8 +31,14 @@ RUN wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod
     && dpkg -i packages-microsoft-prod.deb \
     && rm packages-microsoft-prod.deb \
     && apt update \
-    && apt install -y dotnet-sdk-8.0 aspnetcore-runtime-8.0 \
+    && apt install -y dotnet-sdk-8.0 dotnet-sdk-9.0 \
     && runuser -l vscode -c 'dotnet tool install -g --version=1.6.0 dotnet-script'
+
+# Temp manual install .NET 10 RC to be able to use file based apps (until it's available via apt)
+# source: https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview6/sdk.md#file-based-apps
+COPY temp-dotnet-sdk-10-rc-linux-x64.tar.gz /tmp/temp-dotnet-sdk-10-rc-linux-x64.tar.gz
+RUN tar xzf /tmp/temp-dotnet-sdk-10-rc-linux-x64.tar.gz -C /usr/share/dotnet \
+    && rm /tmp/temp-dotnet-sdk-10-rc-linux-x64.tar.gz
 
 # Install Go
 RUN apt install -y golang gopls

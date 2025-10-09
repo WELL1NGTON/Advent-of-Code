@@ -1,22 +1,18 @@
 {
-    "editor.rulers": [
-        80
-    ],
+    "editor.rulers": [80],
     "dotnet.server.useOmnisharp": true,
     "omnisharp.enableLspDriver": true,
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
-    "Lua.diagnostics.disable": [
-        "lowercase-global",
-    ],
+    "Lua.diagnostics.disable": ["lowercase-global"],
     "rust-analyzer.linkedProjects": [
         "./2023/day-01/Cargo.toml",
-        "./2023/day-07/Cargo.toml",
+        "./2023/day-07/Cargo.toml"
     ],
     "[plaintext]": {
-        "editor.rulers": [ ]
+        "editor.rulers": []
     },
     "docker.languageserver.formatter.ignoreMultilineInstructions": true
 }

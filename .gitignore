@@ -5,3 +5,4 @@
 *.out
 input.txt
 **/target
+temp-dotnet-sdk-10-rc-linux-x64.tar.gz
